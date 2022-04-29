@@ -12,3 +12,7 @@ SpringBoot集成部分技术点demo案例。参考了其他大佬的开源案例
 - Maven 3.6.1
 - MySQL 8.0.28
 
+## 子项目简介
+
+- springboot-entity：通用实体模块
+- springboot-common：通用服务模块
