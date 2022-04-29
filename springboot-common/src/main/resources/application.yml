@@ -1,0 +1,16 @@
+#server:
+#  port: 8888
+
+spring:
+  profiles:
+    active: druid-mp
+
+#spring:
+#  datasource:
+#    name: datasource
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    url: jdbc:mysql://127.0.0.1:3306/book?serverTimezone=GMT%2B8
+#    username: root
+#    password: 123456
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
