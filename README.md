@@ -3,7 +3,7 @@ springboot 案例 整合技术点集合
 
 ## 简介
 
-SpringBoot集成部分技术点demo案例。参考了其他大佬的开源案例。
+SpringBoot集成部分技术点demo案例。参考了其他大佬的开源案例及博客。
 
 ## 环境
 
