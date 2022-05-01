@@ -16,3 +16,4 @@ SpringBoot集成部分技术点demo案例。参考了其他大佬的开源案例
 
 - springboot-entity：通用实体模块
 - springboot-common：通用服务模块
+- springboot-config：存放配置文件
