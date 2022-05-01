@@ -24,11 +24,21 @@ public class WebController {
     @Resource
     private INewBookStoreService bookStoreService;
 
+    /**
+     * http://localhost:8888/common/hello
+     *
+     * @return
+     */
     @GetMapping("hello")
     public Result<Object> test() {
         return Result.success();
     }
 
+    /**
+     * http://localhost:8888/common/
+     *
+     * @return
+     */
     @GetMapping
     public Result<Object> getPages() {
         IPage<NewBookStore> page = new Page<>();
