@@ -18,7 +18,7 @@ public class ScheduleService {
 
     @Scheduled(fixedDelayString = "2000")
     public void scheduleTask1() {
-        log.info("scheduleTask1 定时任务：" + Thread.currentThread().getName() + DataUtil.sdf(new Date()));
+        log.info("scheduleTask1 定时任务：" + Thread.currentThread().getId() + "\t" + DataUtil.sdf(new Date()));
     }
 
     /**
@@ -27,7 +27,7 @@ public class ScheduleService {
      */
     @Scheduled(cron = "*/2 * * * * ?")
     public void scheduleTask2() {
-        log.info("scheduleTask2 定时任务：" + Thread.currentThread().getName() + DataUtil.sdf(new Date()));
+        log.info("scheduleTask2 定时任务：" + Thread.currentThread().getName() + "\t" + DataUtil.sdf(new Date()));
     }
 
 }
