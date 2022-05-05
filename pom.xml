@@ -15,6 +15,7 @@
         <module>springboot-ehcache</module>
         <module>springboot-config</module>
         <module>springboot-async</module>
+        <module>springboot-schedule</module>
     </modules>
 
     <properties>
