@@ -16,6 +16,7 @@
         <module>springboot-config</module>
         <module>springboot-async</module>
         <module>springboot-schedule</module>
+        <module>springboot-quartz</module>
     </modules>
 
     <properties>
