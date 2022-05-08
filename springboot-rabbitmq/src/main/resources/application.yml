@@ -1,0 +1,33 @@
+server:
+  port: 8888
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    # rabbitMQ 服务创建的虚拟主机（非必须），默认 /
+    #    virtual-host: /mqs
+    # 开启消息确认模式
+    # 是否返回回调
+    publisher-returns: true
+    template:
+      # 开启mandatory: true, basic.return方法将消息返还给生产者
+      mandatory: true
+    listener:
+      #      容器类型
+      #      direct:
+      #        acknowledge-mode: manual
+      simple:
+        # 手动应答
+        acknowledge-mode: manual # none
+        # 最小消费者数量
+        concurrency: 1
+        # 最多消费者数量
+        max-concurrency: 10
+        # 支持重试
+        retry:
+          enabled: true
+          # 最大重试次数
+          max-attempts: 2
