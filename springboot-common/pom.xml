@@ -28,7 +28,6 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <optional>true</optional><!--阻止依赖传递-->
         </dependency>
         <!--mybatis-plus-->
         <dependency>
@@ -44,7 +43,6 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.example.entity</groupId>
