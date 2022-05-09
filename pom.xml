@@ -19,6 +19,7 @@
         <module>springboot-quartz</module>
         <module>springboot-redis</module>
         <module>springboot-rabbitmq</module>
+        <module>springboot-mongodb</module>
     </modules>
 
     <properties>

@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: druid
+  data:
+    mongodb:
+      # 登录用户所在的数据库，身份验证
+      authentication-database: mongo
+      host: localhost
+      port: 27017
+      username: "mgx"
+      password: "mgx"
+      # 指定使用的数据库，不必预先创建，默认会自动创建test数据库
+      database: mongo
