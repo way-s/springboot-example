@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: druid
+  elasticsearch:
+    rest:
+      connection-timeout: 10s # 连接超时
+      username: es-1
+      password:
+      read-timeout: 30s # 读取超时时间
+      # uris: ${ES_HOST:localhost}:${ES_PORT:9200} # es rest 接口地址，多个用逗号隔
+      uris: localhost:9200
