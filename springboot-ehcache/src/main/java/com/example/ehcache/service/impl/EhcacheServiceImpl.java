@@ -5,6 +5,7 @@ import com.example.ehcache.service.IEhcacheService;
 import com.example.entity.vo.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -36,10 +37,9 @@ public class EhcacheServiceImpl implements IEhcacheService {
     }
 
     /**
-     * CacheEvict 从缓存中删除key为 save+#id的数据
+     * CachePut 更新缓存
      */
-    @Cacheable(value = "myCache", key = "'save'+#id")
-    @CacheEvict(value = "myCache", key = "'save'+#id")
+    @CachePut(value = "myCache", key = "'save'+#id")
     @Override
     public Object saveOrUpdate(Integer id) {
         //模拟 update
