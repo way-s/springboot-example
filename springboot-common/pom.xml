@@ -56,4 +56,16 @@
         </dependency>
     </dependencies>
 
+    <!--如果您的模块被用作另一个模块的依赖项，则需要为重新打包的模块提供一个分类器-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
