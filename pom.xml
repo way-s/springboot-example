@@ -21,6 +21,7 @@
         <module>springboot-rabbitmq</module>
         <module>springboot-mongodb</module>
         <module>springboot-elasticsearch</module>
+        <module>springboot-security</module>
     </modules>
 
     <properties>

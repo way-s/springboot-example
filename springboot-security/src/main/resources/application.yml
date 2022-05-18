@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: druid
+
+jwt:
+  tokenHeader: Authorization # JWT存储的请求头
+  secret: unleash-the-chaos # 密钥
+  expiration: 6 # 过期时间，小时
+  tokenHead: Bearer #JWT负载中拿到开头，jwt Bearer 模式
+
+secure:
+  roster:
+    admin-urls:
+      - /st/admin
+    user-urls:
+      - /st/user
+    ignored-urls: # 白名单，不需要权限认证
+      - /st/hello
+      - /st/token/**
+      - /st/login/**
