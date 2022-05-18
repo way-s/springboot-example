@@ -15,6 +15,7 @@ public enum Constants {
     AUTH_ERROR(401, "系统错误"),
     PERMISSION_ERROR(403, "没有权限"),
     METHOD_NOT_SUPPORT(405, "请求方法错误"),
+    TOKEN_INVALID(402, "请重新登录"),
     SYSTEM_ERROR(500, "请求失败");
 
     private Integer code;

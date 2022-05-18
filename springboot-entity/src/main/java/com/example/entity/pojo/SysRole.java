@@ -19,8 +19,8 @@ import java.util.Date;
 @Accessors(chain = true)
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName("user_info")
-public class UserInfo implements Serializable {
+@TableName("sys_role")
+public class SysRole implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -30,34 +30,36 @@ public class UserInfo implements Serializable {
     private Long id;
 
     /**
-     * 账号
+     * 角色主键
      */
-    private String account;
+    private Long roleId;
+
+    private String username;
 
     /**
-     * 头像
+     * 角色权限
      */
-    private String avatar;
+    private String role;
 
     /**
-     * 昵称
+     * 角色状态（0正常 1停用）
      */
-    private String nickName;
+    private String status;
 
     /**
-     * 密码
+     * 备注
      */
-    private String password;
+    private String remark;
 
     /**
-     * 邮箱
+     * 创建人id
      */
-    private String email;
+    private Long createBy;
 
     /**
-     * 地区
+     * 修改人id
      */
-    private String location;
+    private Long updateBy;
 
     /**
      * 创建时间
@@ -70,5 +72,6 @@ public class UserInfo implements Serializable {
      */
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
+
 
 }
