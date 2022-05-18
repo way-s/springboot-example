@@ -10,7 +10,7 @@ spring:
     password: 123456
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-
+      time-between-eviction-runs-millis: 300000
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
   configuration:
