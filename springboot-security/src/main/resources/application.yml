@@ -14,6 +14,7 @@ secure:
       - /st/admin
     user-urls:
       - /st/user
+      - /st/text
     ignored-urls: # 白名单，不需要权限认证
       - /st/hello
       - /st/token/**
