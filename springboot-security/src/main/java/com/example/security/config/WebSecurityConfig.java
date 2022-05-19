@@ -82,7 +82,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     /**
      * 安全策略
      * authorizeRequests url拦截配置
-     * hasRole，hasAnyRole：是角色授权，授权代码；两者功能一样，hasRole会给role角色添加ROLE_前缀。
+     * hasRole，hasAuthority：是角色授权，授权代码；两者功能一样，hasRole会给role角色添加ROLE_前缀。
      * permitAll 总是返回true，表示允许所有的
      *
      * @param http
