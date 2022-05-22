@@ -24,7 +24,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     @ExceptionHandler(value = NotLoginException.class)
     public Object handleNotLoginException(NotLoginException e) {
-        log.info("NotLoginException: {}", e.getMessage());
+        log.error("NotLoginException: {}", e.getMessage());
         return Result.fail(e.getMessage());
     }
 
@@ -34,7 +34,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     @ExceptionHandler(value = NotPermissionException.class)
     public Object handleNotPermissionException(NotPermissionException e) {
-        log.info("NotPermissionException: {}", e.getMessage());
+        log.error("NotPermissionException: {}", e.getMessage());
         return Result.fail(e.getMessage());
     }
 
@@ -44,7 +44,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     @ExceptionHandler(value = NotRoleException.class)
     public Object handleNotRoleException(NotRoleException e) {
-        log.info("NotRoleException: {}", e.getMessage());
+        log.error("NotRoleException: {}", e.getMessage());
         return Result.fail(e.getMessage());
     }
 
@@ -54,7 +54,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     @ExceptionHandler(value = DisableLoginException.class)
     public Object handleNotRoleException(DisableLoginException e) {
-        log.info("DisableLoginException: {}", e.getMessage());
+        log.error("DisableLoginException: {}", e.getMessage());
         return Result.fail(e.getMessage());
     }
 
