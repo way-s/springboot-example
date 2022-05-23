@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+spring:
+  # thymeleaf 模板配置
+  thymeleaf:
+    # templates文件夹的路径
+    prefix: classpath:/templates/
+    # 文件后缀名
+    suffix: .html
+    # 应用于模板的模板模式
+    mode: HTML5
+    servlet:
+      # 内容类型
+      content-type: text/html
+    # 编码格式
+    encoding: UTF-8
+    # 启用模板缓存
+    cache: false
+    # 启用MVC Thymeleaf视图分辨率
+    enabled: true

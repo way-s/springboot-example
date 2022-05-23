@@ -23,6 +23,7 @@
         <module>springboot-elasticsearch</module>
         <module>springboot-security</module>
         <module>springboot-sa-token</module>
+        <module>springboot-websocket</module>
     </modules>
 
     <properties>
