@@ -24,6 +24,7 @@
         <module>springboot-security</module>
         <module>springboot-sa-token</module>
         <module>springboot-websocket</module>
+        <module>springboot-filter-interceptor</module>
     </modules>
 
     <properties>
