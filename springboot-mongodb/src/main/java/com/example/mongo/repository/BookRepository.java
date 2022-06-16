@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
  * @Description:
  */
 @Repository
-public interface BookRepository extends MongoRepository<NewBookStore, Object> {
+public interface BookRepository extends MongoRepository<NewBookStore, Long> {
     /**
      * 自定义 根据id获取，无需对方法进行实现
      *
