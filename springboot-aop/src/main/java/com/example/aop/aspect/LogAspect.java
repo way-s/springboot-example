@@ -64,7 +64,7 @@ public class LogAspect {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
         LogAnnotation logAnnotation = method.getAnnotation(LogAnnotation.class);
-        log.info("-------------------AOP LOG START-------------------");
+        log.info("---AOP LOG START-------------------");
         log.info("module：{},`\t`operaDesc：{}", logAnnotation.module(), logAnnotation.operaDesc());
 
         // 获取请求方法名
@@ -81,7 +81,7 @@ public class LogAspect {
 
         long endTime = System.currentTimeMillis();
         log.info("方法用时time= {}", (endTime - startTime) + "毫秒");
-        log.info("-------------------AOP LOG END-------------------");
+        log.info("---AOP LOG END-------------------");
         return result;
     }
 
