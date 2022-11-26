@@ -20,8 +20,8 @@ spring:
       #      direct:
       #        acknowledge-mode: manual
       simple:
-        # 手动应答
-        acknowledge-mode: manual # none
+        # 手动应答 manual ；自动签收 auto
+        acknowledge-mode: auto # none
         # 最小消费者数量
         concurrency: 1
         # 最多消费者数量

@@ -42,7 +42,7 @@ public class MgTest {
         Integer id = 1;
         NewBookStore oneBook = this.bookRepository.getBookInfoById(id);
         log.info("oneBook: {}", oneBook);
-        Optional<NewBookStore> byId = this.bookRepository.findById(id);
+        Optional<NewBookStore> byId = this.bookRepository.findById(Long.valueOf(id));
         log.info("byId: {}", byId);
 
 
@@ -75,7 +75,7 @@ public class MgTest {
 //        Integer id = 2;
 //        this.bookRepository.deleteById(id);
 
-        Optional<NewBookStore> id1 = this.bookRepository.findById(2);
+        Optional<NewBookStore> id1 = this.bookRepository.findById(2L);
         log.info("id1: {} ", id1);
         boolean present = id1.isPresent();
         if (present) {

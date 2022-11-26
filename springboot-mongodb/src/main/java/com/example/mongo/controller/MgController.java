@@ -28,7 +28,7 @@ public class MgController {
      * @return
      */
     @GetMapping("/mg/{id}")
-    public Object getOneBookInfoByMg(@PathVariable Integer id) {
+    public Object getOneBookInfoByMg(@PathVariable Long id) {
         Optional<NewBookStore> book = bookRepository.findById(id);
         log.info("book: {}", book);
         return book.orElse(null);
