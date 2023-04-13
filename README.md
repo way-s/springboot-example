@@ -1,9 +1,8 @@
 # springboot-example
-springboot 案例 整合技术点集合
 
 ## 简介
 
-SpringBoot集成部分技术栈demo案例。该项目中参考了其他的开源案例及博客。
+SpringBoot整合部分技术栈demo案例。该项目中参考了其他的开源案例及博客。
 
 ## 环境
 
